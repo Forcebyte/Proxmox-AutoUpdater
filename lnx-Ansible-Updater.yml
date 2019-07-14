@@ -1,0 +1,14 @@
+---
+#Updates Apt Repository on a timed basis
+- hosts: remote
+  become: yes
+  become_user: root
+  tasks:
+  - name: Install and configure Aptitude
+    apt:
+      name: aptitude 
+      state: latest
+  - name: Update Repository List
+    apt:
+      upgrade: yes
+      update_cache: yes

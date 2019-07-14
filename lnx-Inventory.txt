@@ -1,0 +1,6 @@
+[remote]
+bookstack.shikata.xyz
+unifi.shikata.xyz
+git.shikata.xyz
+jenkins.shikata.xyz
+pihole.shikata.xyz

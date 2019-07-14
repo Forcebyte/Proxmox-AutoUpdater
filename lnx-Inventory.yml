@@ -1,0 +1,8 @@
+all:
+  WebServices:
+    bookstack.shikata.xyz
+    unifi.shikata.xyz
+    git.shikata.xyz
+  CoreServices:
+    jenkins.shikata.xyz
+    pihole.shikata.xyz

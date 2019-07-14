@@ -1,0 +1,7 @@
+[win]
+Kami.Shikata.xyz
+
+[win:vars]
+ansible_user=patrick.turney
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore

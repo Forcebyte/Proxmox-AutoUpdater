@@ -1,0 +1,17 @@
+---
+#Updates Windows on a timed basis
+- hosts: remote
+  become: yes
+  become_user: root
+  tasks:
+  - name: Install and configure Aptitude
+    win_updates:
+        category_names:
+            - SecurityUpdates
+            - CriticalUpdates
+            - UpdateRollups
+        state: installed
+    register: update_result
+  - name: reboot host if required
+    win_reboot:
+     when: update_result.reboot_required
